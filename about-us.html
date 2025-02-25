@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - ComPC Shop</title>
+    <!--main css-->
+    <link rel="stylesheet" href="main.css" />
+    <!--Boxicons-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <!--remix-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="img/ico" href="Images/pcico.ico"/>
+  </head>
+  <body>
+    <!--navigation header-->
+    <header>
+      <a href="main.html" class="logo"><span class="colormomukhamo">ComPC</span> Shop</a>
+
+      <ul class="navlist">
+        <li><a href="products.html"><span class="products1">Shop</span></a></li>
+        <li><a href="pchow.html"><span class="pchow1">PC How</span></a></li>
+        <li><a href="about-us.html"><span class="about-us1">About Us</span></a></li>
+        <li><a href="faq.html"><span class="fuck">FAQ</span></a></li>
+      </ul>
+
+      <div class="nav-right">
+        <a href="#"><i class="risearch-2-line"></i></a>
+        <a href="#" id="cart-icon">
+          <i class="ri-shopping-bag-fill"></i>
+          <span id="cart-count" class="cart-count"></span>
+        </a>
+
+        <a href="index.html"><i class="ri-user-line"></i></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+    </header>
+
+    <section data-aos="fade-up" class="about-us">
+      <div>
+        <img src="./Images/about_us.png" alt="aboutus" />
+      </div>
+      <div class="contents">
+        <h1>About Us</h1>
+        <p>
+          Welcome to <strong>ComPC Shop</strong>, we believe that technology is more than just a tool – it's a gateway to endless possibilities.
+        </p>
+
+        <h2>Our Values</h2>
+        <ul>
+          <li><strong>Customer-Centric Approach:</strong> We prioritize our customers' needs and satisfaction above all else. We strive to provide personalized service, expert guidance, and an enjoyable shopping experience.</li>
+          <li><strong>Integrity and Transparency:</strong> We believe in building trust through honesty and transparency. Our customers can rely on us to provide accurate information, fair pricing, and genuine products.</li>
+          <li><strong>Innovation and Excellence:</strong> At COMPC Shop, we are passionate about staying ahead in the ever-evolving world of technology.</li>
+          <li><strong>Continuous Improvement:</strong> We are dedicated to continuous learning and improvement. We embrace feedback, learn from our experiences, and seek opportunities to enhance our offerings.</li>
+        </ul>
+        <p>Thank you for choosing ComPC Shop. We are excited to be a part of your Techonology and Gaming journey!</p>
+      </div>
+    </section>
+    
+    <h1 class="team-h1" data-aos="fade-down">MEET OUR TEAM</h1>
+    <div class="team" data-aos="fade-up">
+      <div class="container">
+        <div class="panel panel1 active">
+          <h3>Belarmino, Reyden</h3>
+          <h3 class="role">Leader/Functionality</h3>
+        </div>
+        <div class="panel panel2">
+          <h3>De Pedro, Markjay D.</h3>
+          <h3 class="role">Member/Front-End/UI / UX</h3>
+        </div>
+        <div class="panel panel3">
+          <h3>San Juan, Joshua</h3>
+          <h3 class="role">Member/UI / UX</h3>
+        </div>
+      </div>
+    </div>
+
+    <section class="newsletter">
+      <div class="newsletter-content" data-aos="fade-up">
+        <div class="newsletter-text">
+          <h2>Get on the List Now!</h2>
+          <p>Sign up with your email address to receive further updates!</p>
+        </div>
+        <form action="#">
+          <input type="email" placeholder="Your email..." required />
+          <input type="submit" value="Subscribe" class="btn" />
+        </form>
+      </div>
+    </section>
+
+    <!--footer eieie may bold ni wally dito gagi-->
+
+    <section class="footer" data-aos="fade-down">
+      <div class="footer-box">
+        <h3>ComPC Shop</h3>
+        <a href="products.html">Products</a>
+        <a href="pchow.html">PC How</a>
+        <a href="about-us.html">About Us</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+
+      <div class="footer-box">
+        <h3>Motto</h3>
+        <p>Unleash your craziest – Gaming Build Ever!"</p>
+      </div>
+
+      <div class="footer-box">
+        <h3>Socials</h3>
+        <div class="social">
+          <a href="#"><i class="ri-facebook-fill"></i></a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+          <a href="#"><i class="ri-tiktok-fill"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!--Copyright-->
+    <div class="copyright">
+      <div class="end-text">
+        <p>&copy; Copyright 2025 CPPROG @fsociety</p>
+      </div>
+
+      <div class="end-image">
+        <img src="./Images/p.png" />
+      </div>
+    </div>
+
+    <dialog id="cartModal">
+      <div id="cart-header">
+        <h1>Shopping Cart</h1>
+        <svg id="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="currentColor">
+          <path
+            d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM12 10.5858L14.8284 7.75736L16.2426 9.17157L13.4142 12L16.2426 14.8284L14.8284 16.2426L12 13.4142L9.17157 16.2426L7.75736 14.8284L10.5858 12L7.75736 9.17157L9.17157 7.75736L12 10.5858Z"
+          ></path>
+        </svg>
+      </div>
+      <div id="items">
+        <!--  -->
+        <h1>Oops, Your Shopping Cart is Empty</h1>
+        <h2>browse our awesome deals now!</h2>
+        <h2><a id="shoplink" href="products.html">Go shopping NOW!</a></h2>
+      </div>
+      <div id="cart-footer">
+        <h3 id="total">Total:</h3>
+        <button id="place-order">Checkout</button>
+      </div>
+    </dialog>
+
+    <dialog id="checkoutModal">
+      <div class="address">
+        <label for="fname">Fullname</label><br />
+        <input id="fname" type="text" name="fullname" class="address-input" placeholder="ex: Markjay, Reyden, Joshua" /><br />
+
+        <label for="email">Email</label><br />
+        <input id="email" type="email" name="email" class="address-input" placeholder="fsociety@gmail.com" /><br />
+
+        <label for="address">Address</label><br />
+        <input id="address" type="text" name="address" class="address-input" placeholder="3151 Oriole St." /><br />
+
+        <label for="country">Country</label><br />
+        <input id="country" type="text" name="country" class="address-input" placeholder="Philippines" /><br />
+
+        <span>
+          <label for="city">City</label><br />
+          <input id="city" type="text" name="city" class="address-input" placeholder="Pasig City" /><br />
+
+          <label for="zip">Zip Code</label><br />
+          <input id="zip" type="text" name="zip" class="address-input" placeholder="3000" max="6" /><br />
+        </span>
+      </div>
+
+      <div class="billings">
+        <input id="gcash" type="radio" name="payment" class="address-input" />
+        <label for="gcash">G-cash</label>
+        <br />
+        <input id="cod" type="radio" name="payment" class="address-input" />
+        <label for="cod">Cash on Delivery</label>
+        <br />
+        <input id="card" type="radio" name="payment" class="address-input" />
+        <label for="card">Card</label>
+      </div>
+      <button id="submit-order" type="submit">Confirm Order</button>
+    </dialog>
+
+    <script type="module" src="function.js" defer></script>
+    <!--AOS Anim-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 1450,
+      });
+    </script>
+  </body>
+</html>

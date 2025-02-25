@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+* {
+    margin: 2;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+@keyframes typing-animation {
+    0%, 30%, 70%, 100% { width: 0; }
+    40%, 60% { width: 70%; }
+}
+@keyframes paraSaRegisterText {
+    0% { color: rgb(255, 255, 255); }
+    25% { color: rgb(255, 242, 0); }
+    50% { color: rgb(255, 255, 255);}
+    75% { color: rgb(255, 242, 0);}
+    100% { color: rgb(255, 255, 255); }
+}
+
+@keyframes shadowChange {
+    0% {
+        box-shadow: 0 0 20px blue;
+    }
+    25% {
+        box-shadow: 0 0 20px red;
+    }
+    50% {
+        box-shadow: 0 0 30px lime
+    }
+    75% {
+        box-shadow: 0 0 20px rgb(250, 0, 250);
+    }
+    100% {
+        box-shadow: 0 0 20px yellow;
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(221, 221, 221);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 420px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 20px blue;
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin-left: 110px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    background: url(img3.png);
+}
+
+.wrapper:hover {
+    filter: drop-shadow(0 0 20px blue);
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: px;
+    margin: 30px 0;
+}
+
+
+.wrapper .input-box label {
+    display: block;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    padding: 0 20px;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.wrapper {
+    animation: shadowChange 3s infinite;
+}
+
+.wrapper:hover {
+    animation: shadowChange 3s infinite;
+}
+
+.input-box input::placeholder {
+    color: black;
+}
+
+.input-box i {
+    position: absolute;
+    right: 10px;
+    top: 70%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: black;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+    color: white;
+}
+
+.remember-forgot label input {
+    accent-color: white;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: white;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.wrapper .btn:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 20px blue);
+    background-color: blue;
+    color: white;
+}
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+    color: white;
+}
+
+.register-link p a {
+    color: rgb(0, 255, 255);
+    text-decoration: none;
+    font-weight: 600;
+    animation: paraSaRegisterText 5s infinite; 
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+#error-message {
+    text-align: center;
+    font-size: 14px;
+    color: red;
+    margin-top: 10px;
+}
+
+.wrapper2{
+    width: 1100px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: black;
+    background: url(img4.png);
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+}
+
+.wrapper2:hover {
+    filter: drop-shadow(0 0 20px blue);
+}
+
+.wrapper2 h1 {
+    color:white;
+}
+
+.wrapper3 {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.image {
+    width: 500px;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgb(1, 255, 1);
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba (0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.content:hover {
+    opacity: 1;
+}
+
+.content h1 {
+    font-size: 35px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 19px;
+    color: white;
+}
+
+.content>* {
+    transform: translateY(25px);
+    transition: transform 0.6s;
+}
+
+.content:hover>* {
+    transform: translateY(0px);
+}
+
+.hha {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* typing animation bruh */
+.typing-container {
+    display: inline-block;
+    border-right: 2px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing-animation 6s steps(99) infinite;  /* Adjusted duration and steps */
+    font-size: 2em;
+    color: #333;
+}
+
+/* dito ilalagay yung keyframes animation */
+@keyframes typing-animation {
+    0%, 30%, 70%, 100% { width: 0; }
+    40%, 60% { width: 70%; }
+}
+
+
+/* Responsive na to sa mobile kala niyo ah */
+
+@media (max-width: 748px) {
+    .wrapper {
+        margin: 0 auto;
+        width: 80%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #wrapper2 {
+        display: none;
+        width: 90%;
+        padding: 15px;
+        margin: 0 auto;
+    }
+
+    #whats-new-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 10px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: yellow;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    #whats-new-button:hover {
+        background-color: yellow;
+        transform: translateY(-2px);
+    }
+
+    #whats-new-button:active {
+        background-color: yellow;
+        transform: translateY(2px);
+    }
+}
+
+#show-wrapper2, #show-back-to-login {
+    display: none;
+}
+
+@media (max-width: 748px) {
+    #show-wrapper2, #show-back-to-login {
+        display: inline-block;
+    }
+}
+
+#back-to-login {
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #0a74da;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#back-to-Login i {
+    font-size: 2px;
+}
+
+#back-to-login:hover {
+    background-color: #005bb5;
+    transform: translateY(-2px);
+}
+
+#back-to-login:active {
+    background-color: #00458a;
+    transform: translateY(2px);
+}
+
+/* para sa back2login labas on desktop duh*/
+/* Hide the button on larger screens */
+#back-to-login {
+    display: none;
+}
+
+/* Show the button on smaller screens */
+@media (max-width: 748px) {
+    #back-to-login {
+        display: inline-block; 
+    }
+
+    .wrapper {
+        margin: 0 auto;
+        width: 80%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #wrapper2 {
+        display: none;
+        width: 90%;
+        padding: 15px;
+        margin: 0 auto;
+    }
+
+    #whats-new-button {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        padding: 10px;
+        font-size: 1px;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: yellow;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    #whats-new-button:hover {
+        background-color: yellow;
+        transform: translateY(-2px);
+    }
+
+    #whats-new-button:active {
+        background-color: yellow;
+        transform: translateY(2px);
+    }
+
+    #show-wrapper2, #show-back-to-login {
+        display: inline-block;
+    }
+    
+    #back-to-login:hover {
+        background-color: #005bb5;
+        transform: translateY(-2px);
+    }
+
+    #back-to-login:active {
+        background-color: #00458a;
+        transform: translateY(2px);
+    }
+}

@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(69, 38, 38);
+}
+
+.classSnaPanget {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .classSnaPanget {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    body {
+        margin-top: 200px;
+    }
+}

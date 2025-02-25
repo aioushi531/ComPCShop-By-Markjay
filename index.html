@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="loginmj/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="img/ico" href="/Cpprog3/Images/pcico.ico" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <form id="login-form">
+            <h1>Login</h1>
+            <div class="input-box">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Email" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="Password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember me</label>
+                <a href="loginmj/frgtpw/index.html">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="register-link">
+                <p>Don't have an account? <a href="/Cpprog3/loginmj/loadingpage/index.html">Register</a></p>
+            </div>
+            <div id="error-message"></div>
+        </form>
+        <button id="show-wrapper2" class="btn">What's New?</button>
+    </div>
+
+    <div class="wrapper2" id="wrapper2">
+        <h1 class="typing-container">What's new?</h1>
+        <div id="kupal" class="wrapper3">
+            <div class="image">
+                <img src="loginmj/img.png">
+                <div class="content">
+                    <h1>Game Changer</h1>
+                    <p>GeForce RTX50 series</p>
+                </div>
+            </div>
+        </div>
+        <p class="hha">Powered by NVIDIA Blackwell, GeForce RTX™ 50 Series GPUs bring game-changing capabilities to gamers and creators. Equipped with a massive level of AI horsepower, the RTX 50 Series enables new experiences and next-level graphics fidelity. Multiply performance with NVIDIA DLSS 4, generate images at unprecedented speed, and unleash your creativity with NVIDIA Studio. CES 2025 is here and with it the NVIDIA RTX 50 Series announcements! So far, the GeForce RTX 5090, 5080, 5070 Ti, and 5070 have been officially announced – but we’re still hopeful the full line-up is on the horizon. There’s no intel about a possible RTX 5050, as of yet, but given the jump in spec, this could be a great candidate for budget gamers.</p>
+        <button id="back-to-login" class="btn">X</button>
+    </div>
+    <script src="loginmj/login.js"></script>
+</body>
+</html>
