@@ -3,7 +3,7 @@ export const products = [
     id: 0,
     name: 'Xiaomi G34Qi Monitor',
     specs: '24 Inch',
-    description: 'gaming curved 34 inches',
+    description: 'gaming curved 24 inches',
     price: 5699,
     category: 'pcparts',
     image: './Images/xiaomi monitor.jpg',

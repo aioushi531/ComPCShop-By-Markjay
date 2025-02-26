@@ -21,11 +21,10 @@ loginForm.addEventListener("submit", function(event) {
 function validateCredentials(email, password) {
     let users = [
         { email: "newuser@pogi", password: "1234" },
-        { email: "user1@pogi", password: "1234" },
-        { email: "user2@pogi", password: "1234" },
-        { email: "markjay@pogi", password: "050603"},
-        { email: "joshua@pogi", password: "1234" },
-        { email: "reyden@pogi", password: "1234" }
+        { email: "user@admin", password: "1234" },
+        { email: "user2@admin", password: "1234" },
+        { email: "mj@admin", password: "1234"},
+        { email: "reyden@admin", password: "1234" }
     ];
 
     for (const user of users) {

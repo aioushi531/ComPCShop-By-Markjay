@@ -29,7 +29,6 @@
       </ul>
 
       <div class="nav-right">
-        <a href="#"><i class="risearch-2-line"></i></a>
         <a href="#" id="cart-icon">
           <i class="ri-shopping-bag-fill"></i>
           <span id="cart-count" class="cart-count"></span>
@@ -64,7 +63,7 @@
         </form>
       </div>
     </section>
-
+    
     <!--footer eieie may bold ni wally dito gagi-->
 
     <section class="footer" data-aos="fade-down">
@@ -159,6 +158,28 @@
       <button id="submit-order" type="submit">Confirm Order</button>
     </dialog>
 
+    <!--PARA SA COSTUMER SERVICE BOSS-->
+    
+    <button class="chat-toggle" id="chatToggle">💬</button>
+    
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+            <h3>Costumer Service</h3>
+            <button class="close-btn" id="closeChat">×</button>
+        </div>
+        <div class="chat-messages" id="chatMessages"></div>
+        <div class="chat-suggestions" id="chatSuggestions">
+            <button class="suggestion">bakit ang mahal?</button>
+            <button class="suggestion">nagsasarado kayo?</button>
+            <button class="suggestion">daddy **** moko daddy</button>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Type your message...">
+            <button id="sendBtn">Send</button>
+        </div>
+    </div>
+
+    <script src="datasetngmgapogi.js"></script>
     <script type="module" src="function.js" defer></script>
     <!--AOS Anim-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

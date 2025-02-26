@@ -29,6 +29,60 @@ body   {
   min-width: 320px;
 }
 
+.dark-mode-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--icon-color, #333);
+  margin-left: 1rem;
+}
+
+.dark-mode-toggle .ri-sun-fill {
+  display: none;
+}
+
+body.dark .dark-mode-toggle .ri-moon-fill {
+  display: none;
+}
+
+body.dark .dark-mode-toggle .ri-sun-fill {
+  display: inline;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark header {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+.container.dark {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+body.dark .ri {
+  color: #ffffff;
+}
+
+body.dark .logo,
+body.dark .navlist a,
+body.dark .nav-right a,
+body.dark .footer-box a,
+body.dark .footer-box h3,
+body.dark .newsletter-text h2,
+body.dark .newsletter-text p,
+body.dark .end-text p,
+body.dark .chat-header h3,
+body.dark .chat-suggestions .suggestion,
+body.dark .chat-input input,
+body.dark .chat-input button {
+  color: #ffffff;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -538,7 +592,6 @@ section {
   transition: 0.5s ease;
   overflow: hidden;
   border-radius: 0.8rem;
-
 }
 
 @keyframes shadowChange {
@@ -568,7 +621,7 @@ section {
 }
 
 .products .product-cards img {
-  width: 300px;
+  width: 250px;
   height: 300px;
 }
 
@@ -601,7 +654,6 @@ section {
 .recipes {
   display: flex;
   flex-direction: column;
-  background-color: #f9f9f9;
 }
 .recipe-card {
   margin-top: 3rem;
@@ -734,7 +786,7 @@ section {
   width: 80vw;
   height: 80vh;
   transition: width 0.3s ease;
-  overflow: visible; /* Allow content to flow */
+  overflow: visible;
 }
 
 .panel {
@@ -779,15 +831,19 @@ section {
 
 /* Background Images */
 .panel1 {
-  background-image: url('/Cpprog3/Images/belarmino.jpg');
+  background-image: url('Images/belarmino.jpg');
 }
 
 .panel2 {
-  background-image: url('/Cpprog3/Images/depedro.jpg');
+  background-image: url('Images/depedro.jpg');
 }
 
 .panel3 {
-  background-image: url('/Cpprog3/Images/san\ juan.jpg');
+  background-image: url('Images/san\ juan.jpg');
+}
+
+.panel4 {
+  background-image: url('Images/Datu.jpg');
 }
 
 .team-h1 {
@@ -1031,7 +1087,7 @@ section {
   }
   .shop-nav label {
     padding: 10px 10px;
-    font-size: 15px;
+    font-size: 11.5px;
   }
   .searchBar {
     height: 30px;
@@ -1095,4 +1151,219 @@ section {
   .faq {
     margin: 2rem 0;
   }
+}
+
+/*PARA SA CHAT TOGGLE SA COSTUMER SERVICE*/
+
+.chat-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  display: none;
+}
+
+.chat-container.active {
+  transform: translateY(0);
+  display: block;
+}
+
+.chat-header {
+  background: #1e00ff;
+  color: white;
+  padding: 15px;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-body {
+  height: 50px;
+  padding: 5px;
+  overflow-y: auto;
+}
+
+.toggle-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 10px;
+  height: 200px;
+  border-radius: 50%;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.question-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.question-item {
+  padding: 100px;
+  margin: 5px 0;
+  background: #f1f1f1;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.question-item:hover {
+  background: #940c0c;
+}
+
+.message {
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.user-message {
+  background: #00f8ae;
+  color: white;
+  margin-left: 20%;
+}
+
+.bot-message {
+  background: #ffffff;
+  margin-right: 20%;
+}
+
+.chat-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 15px;
+  border: none;
+  border-radius: 50%;
+  background-color: #0441ea;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.chat-container {
+  position: fixed;
+  bottom: 570px;
+  right: 20px;
+  width: 350px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  display: none;
+}
+
+.chat-header {
+  padding: 15px;
+  background: #080eb6;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.chat-messages {
+  height: 300px;
+  overflow-y: auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.message {
+  max-width: 80%;
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+
+.user-message {
+  background: #00f704;
+  color:#000;
+  align-self: flex-end;
+}
+
+.bot-message {
+  background: #073cdd;
+  color:white;
+  align-self: flex-start;
+  position: relative;
+}
+
+.typing-animation::after {
+  content: "";
+  position: absolute;
+  right: -5px;
+  bottom: 0;
+  border-right: 2px solid #000;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.chat-input {
+  display: flex;
+  padding: 5px;
+  gap: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.chat-input button {
+  padding: 10px 20px;
+  background: #00f704;
+  border: none;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.chat-suggestions {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.suggestion {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #b4acac;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.suggestion:hover {
+  background-color: #1308e4;
+  color:white;
 }

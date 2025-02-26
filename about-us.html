@@ -65,17 +65,21 @@
     <h1 class="team-h1" data-aos="fade-down">MEET OUR TEAM</h1>
     <div class="team" data-aos="fade-up">
       <div class="container">
-        <div class="panel panel1 active">
+        <div class="panel panel1">
           <h3>Belarmino, Reyden</h3>
-          <h3 class="role">Leader/Functionality</h3>
+          <h3 class="role">Project Manager</h3>
         </div>
         <div class="panel panel2">
           <h3>De Pedro, Markjay D.</h3>
-          <h3 class="role">Member/Front-End/UI / UX</h3>
+          <h3 class="role">Full Stack Developer</h3>
         </div>
         <div class="panel panel3">
           <h3>San Juan, Joshua</h3>
-          <h3 class="role">Member/UI / UX</h3>
+          <h3 class="role">Front End</h3>
+        </div>
+        <div class="panel panel4">
+          <h3>Datu, Emarie M.</h3>
+          <h3 class="role">Researcher</h3>
         </div>
       </div>
     </div>
@@ -118,6 +122,27 @@
         </div>
       </div>
     </section>
+
+     <!--PARA SA COSTUMER SERVICE BOSS-->
+    
+     <button class="chat-toggle" id="chatToggle">💬</button>
+    
+     <div class="chat-container" id="chatContainer">
+         <div class="chat-header">
+             <h3>Costumer Service</h3>
+             <button class="close-btn" id="closeChat">×</button>
+         </div>
+         <div class="chat-messages" id="chatMessages"></div>
+         <div class="chat-suggestions" id="chatSuggestions">
+             <button class="suggestion">bakit ang mahal?</button>
+             <button class="suggestion">nagsasarado kayo?</button>
+             <button class="suggestion">daddy **** moko daddy</button>
+         </div>
+         <div class="chat-input">
+             <input type="text" id="userInput" placeholder="Type your message...">
+             <button id="sendBtn">Send</button>
+         </div>
+     </div>
 
     <!--Copyright-->
     <div class="copyright">
@@ -187,6 +212,7 @@
       <button id="submit-order" type="submit">Confirm Order</button>
     </dialog>
 
+    <script src="datasetngmgapogi.js"></script>
     <script type="module" src="function.js" defer></script>
     <!--AOS Anim-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
